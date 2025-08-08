@@ -113,6 +113,45 @@ const OptimizedParagraph: React.FC<{ text: string; index: number }> =
           Os <strong>50% restantes</strong>
           {text.split("50% restantes")[1]}
         </>
+      ) : text.includes("**WhatsApp e e-mail**") ||
+        text.includes("**WhatsApp and email**") ? (
+        <>
+          {text.split("**WhatsApp")[0]}
+          <strong style={{}}>
+            WhatsApp{text.split("WhatsApp")[1].split("**")[0]}
+          </strong>
+          {text.split("**")[2]}
+        </>
+      ) : text.includes("**Após a finalização completa do projeto:**") ? (
+        <>
+          <strong style={{}}>Após a finalização completa do projeto:</strong>
+          {text.replace("**Após a finalização completa do projeto:**", "")}
+        </>
+      ) : text.includes("**After complete project finalization:**") ? (
+        <>
+          <strong style={{}}>After complete project finalization:</strong>
+          {text.replace("**After complete project finalization:**", "")}
+        </>
+      ) : text.includes("**Cancelamento após início do projeto:**") ? (
+        <>
+          <strong style={{}}>Cancelamento após início do projeto:</strong>
+          {text.replace("**Cancelamento após início do projeto:**", "")}
+        </>
+      ) : text.includes("**Cancellation after project start:**") ? (
+        <>
+          <strong style={{}}>Cancellation after project start:</strong>
+          {text.replace("**Cancellation after project start:**", "")}
+        </>
+      ) : text.includes("**Antes do início do projeto:**") ? (
+        <>
+          <strong style={{}}>Antes do início do projeto:</strong>
+          {text.replace("**Antes do início do projeto:**", "")}
+        </>
+      ) : text.includes("**Before project start:**") ? (
+        <>
+          <strong>Before project start:</strong>
+          {text.replace("**Before project start:**", "")}
+        </>
       ) : text.includes("25% é reembolsável") ? (
         <>
           {text.split("25% é reembolsável")[0]}
