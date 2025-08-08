@@ -200,7 +200,7 @@ export const BackgroundPattern = styled.div`
     right: 0;
     width: 30rem;
     height: 30rem;
-    background: radial-gradient(circle, #ec4899 0%, transparent 70%);
+    background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);
     border-radius: 50%;
     filter: blur(60px);
     opacity: 0.15;
@@ -241,7 +241,7 @@ export const ProfileImage = styled.div`
   width: 9rem;
   height: 9rem;
   border-radius: 50%;
-  background: linear-gradient(45deg, #a855f7, #ec4899, #f97316, #a855f7);
+  background: linear-gradient(45deg, #a855f7, #8b5cf6, #7c3aed, #a855f7);
   background-size: 400% 400%;
   animation: ${gradientShift} 6s ease infinite;
   padding: 4px;
@@ -266,7 +266,7 @@ export const ProfileImage = styled.div`
     position: absolute;
     inset: -8px;
     border-radius: 50%;
-    background: linear-gradient(45deg, #a855f7, #ec4899);
+    background: linear-gradient(45deg, #a855f7, #8b5cf6);
     opacity: 0.3;
     filter: blur(20px);
     z-index: -1;
@@ -311,7 +311,7 @@ export const ProfileImageInner = styled.div`
       135deg,
       rgba(168, 85, 247, 0.15) 0%,
       transparent 50%,
-      rgba(236, 72, 153, 0.15) 100%
+      rgba(139, 92, 246, 0.15) 100%
     );
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -328,13 +328,13 @@ export const SparkleIcon = styled.div`
   right: -12px;
   width: 2.5rem;
   height: 2.5rem;
-  background: linear-gradient(135deg, #ec4899, #a855f7);
+  background: linear-gradient(135deg, #8b5cf6, #a855f7);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4),
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4),
     0 0 0 3px rgba(255, 255, 255, 0.1);
   animation: ${pulse} 3s ease-in-out infinite;
   z-index: 2;
@@ -350,7 +350,7 @@ export const SparkleIcon = styled.div`
 export const ProfileTitle = styled.h1`
   font-size: 2.25rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #d8b4fe 0%, #f9a8d4 50%, #d8b4fe 100%);
+  background: linear-gradient(135deg, #d8b4fe 0%, #c4b5fd 50%, #d8b4fe 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -615,7 +615,7 @@ export const FooterText = styled.p`
     transition: color 0.3s ease;
 
     &:hover {
-      color: #ec4899;
+      color: #8b5cf6;
     }
   }
 `;
@@ -716,7 +716,7 @@ export const ModalTitle = styled.h2`
   font-family: "Pacifico", "Dancing Script", cursive;
   font-size: 2rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #d8b4fe 0%, #f9a8d4 50%, #d8b4fe 100%);
+  background: linear-gradient(135deg, #d8b4fe 0%, #c4b5fd 50%, #d8b4fe 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -759,7 +759,7 @@ export const SectionTitle = styled.h3`
   font-family: "Quicksand", "Comfortaa", sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
-  color: #ec4899;
+  color: #8b5cf6;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -790,7 +790,7 @@ export const SectionContent = styled.div`
   }
 
   strong {
-    color: #f9a8d4;
+    color: #c4b5fd;
     font-weight: 600;
   }
 
