@@ -672,7 +672,7 @@ const SOCIAL_LINKS_DATA: SocialLinkData[] = [
   },
   {
     icon: <FaWhatsapp size={24} />,
-    url: "https://wa.me/5592925327778",
+    url: "https://wa.me/55929925327778",
     color: "#25D366",
   },
 ];
