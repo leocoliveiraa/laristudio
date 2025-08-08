@@ -662,17 +662,17 @@ const SOCIAL_LINKS_DATA: SocialLinkData[] = [
   },
   {
     icon: <FaInstagram size={24} />,
-    url: "https://instagram.com/lari.design",
+    url: "https://instagram.com/lariistudio",
     color: "#E4405F",
   },
   {
     icon: <FaTiktok size={24} />,
-    url: "https://tiktok.com/@lari.design",
+    url: "https://tiktok.com/@laristudio_",
     color: "#FF0050",
   },
   {
     icon: <FaWhatsapp size={24} />,
-    url: "https://wa.me/5511999999999",
+    url: "https://wa.me/5592925327778",
     color: "#25D366",
   },
 ];
