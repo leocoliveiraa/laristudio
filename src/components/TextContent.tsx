@@ -1,4 +1,3 @@
-// Types
 export type Language = "pt" | "en";
 
 export interface Translation {
@@ -94,7 +93,7 @@ export const TRANSLATIONS: Record<Language, Translation> = {
         communication: {
           title: "Comunicação e Envio de Arquivos",
           content: [
-            "A comunicação será feita via WhatsApp, e-mail e/ou Google Drive.",
+            "A comunicação será feita via WhatsApp e e-mail.",
             "Todos os arquivos finais serão entregues em uma pasta exclusiva no Google Drive.",
             "É responsabilidade do cliente aprovar as etapas e baixar os arquivos dentro do prazo acordado.",
           ],
@@ -103,7 +102,7 @@ export const TRANSLATIONS: Record<Language, Translation> = {
           title: "Cancelamentos e Reembolsos",
           content: [
             "Após a finalização completa do projeto: não há reembolso.",
-            "Após aprovação do rascunho e execução de cerca de 50% do projeto: reembolso de 50% do valor total.",
+            "Cancelamento após início do projeto: Caso o cliente solicite o cancelamento após a aprovação do rascunho e a execução de 50% do projeto, será realizado o reembolso de apenas 25% do valor total contratado.",
             "Antes do início do projeto: aplica-se a política de não devolução do sinal.",
           ],
         },
@@ -163,7 +162,7 @@ export const TRANSLATIONS: Record<Language, Translation> = {
         communication: {
           title: "Communication and File Delivery",
           content: [
-            "Communication will be done via WhatsApp, email and/or Google Drive.",
+            "Communication will be done via WhatsApp and email.",
             "All final files will be delivered in an exclusive Google Drive folder.",
             "It is the client's responsibility to approve the stages and download the files within the agreed deadline.",
           ],
@@ -172,7 +171,7 @@ export const TRANSLATIONS: Record<Language, Translation> = {
           title: "Cancellations and Refunds",
           content: [
             "After complete project finalization: no refund.",
-            "After draft approval and execution of about 50% of the project: refund of 50% of the total value.",
+            "Cancellation after the start of the project: If the client requests cancellation after the draft has been approved and 50% of the project has been completed, only 25% of the total contracted amount will be refunded.",
             "Before project start: non-refund deposit policy applies.",
           ],
         },
