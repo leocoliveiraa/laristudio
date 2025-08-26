@@ -14,7 +14,6 @@ import { HiSparkles, HiStar } from "react-icons/hi";
 
 import profilePic from "./assets/IMG_1442.png";
 
-// Import dos componentes organizados
 import {
   TRANSLATIONS,
   type Translation,
@@ -61,7 +60,6 @@ import {
   ImportantNote,
 } from "./styles/StyledComponents";
 
-// Interfaces
 interface SocialLinkData {
   icon: React.ReactNode;
   url: string;
@@ -74,7 +72,6 @@ interface TermsModalProps {
   translation: Translation;
 }
 
-// Constants
 const SOCIAL_LINKS_DATA: SocialLinkData[] = [
   {
     icon: <FaBriefcase size={24} />,
@@ -93,12 +90,11 @@ const SOCIAL_LINKS_DATA: SocialLinkData[] = [
   },
   {
     icon: <FaWhatsapp size={24} />,
-    url: "https://wa.me/5511999999999",
+    url: "https://wa.me/559292532778",
     color: "#25D366",
   },
 ];
 
-// Componente otimizado para renderização de parágrafos
 const OptimizedParagraph: React.FC<{ text: string; index: number }> =
   React.memo(({ text, index }) => (
     <p key={index}>
@@ -220,7 +216,6 @@ const OptimizedParagraph: React.FC<{ text: string; index: number }> =
   ));
 
 OptimizedParagraph.displayName = "OptimizedParagraph";
-// Sub-components
 const FloatingElements: React.FC = React.memo(() => (
   <>
     <FloatingElement className="star-1">
@@ -258,7 +253,6 @@ const TermsModal: React.FC<TermsModalProps> = React.memo(
       e.stopPropagation();
     }, []);
 
-    // Memoizar seções para evitar re-renderização desnecessária
     const paymentSection = useMemo(
       () => (
         <TermsModalSection>
@@ -377,7 +371,6 @@ const TermsModal: React.FC<TermsModalProps> = React.memo(
 
 TermsModal.displayName = "TermsModal";
 
-// Main Component
 const App: React.FC = () => {
   const [language, setLanguage] = useState<Language>("pt");
   const [isTermsModalOpen, setIsTermsModalOpen] = useState(false);
